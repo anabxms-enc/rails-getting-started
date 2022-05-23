@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(title: "...", body: "...")
+    @article = Article.new(title: "...", body: "...", author: "...")
 
     if @article.save
       redirect_to @article

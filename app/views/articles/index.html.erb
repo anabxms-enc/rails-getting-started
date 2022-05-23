@@ -7,6 +7,8 @@ Our blog has <%= Article.public_count %> articles and counting!
     <% unless article.archived? %>
       <li>
         <%= link_to article.title, article %>
+        <br>
+        <strong>Autor:</strong> <%= article.author %>
       </li>
     <% end %>
   <% end %>
